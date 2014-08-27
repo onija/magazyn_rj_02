@@ -9,7 +9,7 @@
 
     </head>
     <body>
-
+ <%@ include file="./menu.jsp"%><br>
         <h1>
             Hello world!  
         </h1>

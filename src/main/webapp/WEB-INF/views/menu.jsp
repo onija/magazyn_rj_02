@@ -12,7 +12,7 @@
     </head>
 
     <body>
- <%@ include file="./menu.jsp"%>
+
         <div id="page-wrap">
             <spring:url value="/resources/images/po.jpg" htmlEscape="true" var="anyImage" />
             <img src="${anyImage}" alt="inny obrazek" />

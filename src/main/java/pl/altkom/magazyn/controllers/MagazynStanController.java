@@ -33,27 +33,11 @@ public class MagazynStanController {
 			wyrazenie = request.getParameter("wyrazenie");
 		}
 		
-		if ((request.getParameter("sort") != null)) {
-			md.setSort(Integer.parseInt(request.getParameter("sort")));
-		}
-
-		if ((request.getParameter("id") != null)
-				&& (request.getParameter("action") != null)) {
-			if (request.getParameter("action").equals("delete")) {
-				md.removeTowar(Integer.parseInt(request.getParameter("id")));
-			}
-			if (request.getParameter("action").equals("update")) {
-				zmiana = true;
-				id = Integer.parseInt(request.getParameter("id"));
-				model.addAttribute("towar", md.getTowar(id));
-			}
-		}
 
 		// md.addTowar(new Towar(0,"Buty","Letnie",200.0,30,"Obuwie"));
 		model.addAttribute("magazyn", md.getAllSortedTowar(atrybut, wyrazenie));
 		model.addAttribute(new Towar());
-		return "magazynstan";
-	}
+		return "/magazynstan";
+	}}
 
 	
-}

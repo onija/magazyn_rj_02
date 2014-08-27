@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ <%@ include file="./menu.jsp"%><br>
 
 	<form action="magazyn" method="get">
 		<input type="text" value=".*" name="wyrazenie" ><br> 

@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ <%@ include file="./menu.jsp"%><br>
 	<form:form modelAttribute="towar">
 		Nazwa: <form:input path="nazwa" />
 		<br>
