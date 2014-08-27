@@ -6,7 +6,8 @@
         <title>Insert title here</title>
     </head>
     <body>
-        <%@ include file="./menu.jsp"%><br>
+        <div id="page-wrap">
+        <%@ include file="./menu.jsp"%><br><br>
         <form:form modelAttribute="towar">
             Nazwa: <form:input path="nazwa" />
             <br>
@@ -61,5 +62,6 @@
                 </tr>
             </c:forEach>
         </table>
+            </div>
     </body>
 </html>

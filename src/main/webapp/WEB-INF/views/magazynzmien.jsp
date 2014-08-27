@@ -7,20 +7,21 @@
         <title>Insert title here</title>
     </head>
     <body>
-        <%@ include file="./menu.jsp"%><br>
-        <form:form modelAttribute="towar">
-            Nazwa: <form:input path="nazwa" />
-            <br>
-            Opis: <form:input path="opis" />
-            <br>
-            Cena: <form:input path="cena" />
-            <br>
-            Ilosc: <form:input path="ilosc" />
-            <br>
-            Kategoria: <form:input path="kategoria" />
-            <br>
-            <input type="submit" value="Zmie&#324;" />
-            <form:hidden path="id"/>
-        </form:form>
+        <div id="page-wrap">
+            <%@ include file="./menu.jsp"%><br><br>
+            <form:form modelAttribute="towar">
+                Nazwa: <form:input path="nazwa" />
+                <br>
+                Opis: <form:input path="opis" />
+                <br>
+                Cena: <form:input path="cena" />
+                <br>
+                Ilosc: <form:input path="ilosc" />
+                <br>
+                Kategoria: <form:input path="kategoria" />
+                <br>
+                <input type="submit" value="Zmie&#324;" />
+                <form:hidden path="id"/>
+            </form:form>
     </body>
 </html>

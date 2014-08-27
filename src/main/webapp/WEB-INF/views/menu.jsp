@@ -1,33 +1,34 @@
-<%@include file="./includes/common.jsp"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="./includes/common.jsp"%>
+<%@ page session="false" %>
 <!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href="${pageContext.request.contextPath}/resources/style/arkusz03.css" rel="stylesheet" type="text/css" />	
+        <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />	
         <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
-        <script type="text/javascript" language="javascript"
-        src="js/jquery.dropdownPlain.js"></script>
+        <script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
     </head>
 
     <body>
 
-        <div id="page-wrap">
-            <img src="${pageContext.request.contextPath}/resources/images/fruits_4.gif" alt="inny obrazek" />
-            <h6>The redox-active proteins for nanotechnological application</h6>
+        <div>
+            <img class="logo" src="${pageContext.request.contextPath}/resources/images/fruits_4.gif" alt="inny obrazek" />
+            <h6> The redox-active proteins for nanotechnological application</h6>
             <img src="${pageContext.request.contextPath}/resources/images/fruits.jpg" alt="inny obrazek" />
 
-<hr>
             <p>
                 <a target="_blank" href="http://www.wp.pl">Wirtualna Polska</a> | <a
                     target="_blank" href="http://www.onet.pl">Onet.pl</a> | <a
-                    target="_blank" href="http://www.interia.pl">Interia.pl</a>  |  Pracujesz xxxxxxxxxxx xxxxx xxxxx na tej stronie od godziny ${serverTime}. xxxxxxxxxx</P>
+                    target="_blank" href="http://www.interia.pl">Interia.pl</a>  |  Pracujesz  na tej stronie od godziny ${serverTime}. </P>
             </p>
+
 
             <ul class="dropdown">
                 <li><a href="<c:url value="/"/>">Home</a>
                 </li>
-                <li><a href="#">Magazyn</a>
+                <li><a href="magazynstan">Stan Magazynu</a>
                     <ul class="sub_menu">
                         <li><a href="magazynstan">Stan Magazynu</a></li>
 <!--                    <li><a href="<c:url value="magazynzmien.jsp" />">Dodaj do Magazynu</a></li>-->
@@ -36,7 +37,7 @@
                         <li><a href="magazyn">Usu&#x144; z Magazynu</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Tre&#x15B;&#x107;</a>
+                <li><a href="magazyn">Dodaj do Magazynu</a>
                     <ul class="sub_menu">
                         <li><a href="#">Z r&#x119;ki</a>
                             <li><a href="#">Szablony</a>

@@ -9,16 +9,16 @@
 
     </head>
     <body>
-               <div id="page-wrap">
-        <%@ include file="./menu.jsp"%><br><br><br>
-        <h1>
-            Hello world!  
-        </h1>
+        <div id="page-wrap">
+            <%@ include file="./menu.jsp"%><br><br><br>
+            <h1>
+                Hello world!  
+            </h1>
 
-       
-       
-        <a href="<c:url value="/magazyn" />" >Magazyn</a>
-        <a href="<c:url value="/magazynstan" />" >Stan</a>
-               </div>
+            <hr>
+
+            <a href="<c:url value="/magazyn" />" >Magazyn</a>
+            <a href="<c:url value="/magazynstan" />" >Stan</a>
+        </div>
     </body>
 </html>
