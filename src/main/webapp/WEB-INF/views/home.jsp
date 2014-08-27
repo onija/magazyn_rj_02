@@ -15,8 +15,7 @@
         </h1>
 
         <P>  The time on the server is ${serverTime}. </P>
-
-        
+hhhh
                 <a href="<c:url value="/magazyn" />" >Magazyn</a>
             <a href="<c:url value="/magazynstan" />" >Stan</a>
     </body>
