@@ -2,6 +2,7 @@
 <!DOCTYPE>
 <html>
     <head>
+        <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />
         <title>Insert title here</title>
     </head>
     <body>

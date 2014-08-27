@@ -10,7 +10,7 @@
     </head>
     <body>
                <div id="page-wrap">
-        <%@ include file="./menu.jsp"%><br>
+        <%@ include file="./menu.jsp"%><br><br><br>
         <h1>
             Hello world!  
         </h1>

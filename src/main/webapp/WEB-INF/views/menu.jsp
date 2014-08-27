@@ -4,8 +4,7 @@
 
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />	
-
+        <link href="${pageContext.request.contextPath}/resources/style/arkusz03.css" rel="stylesheet" type="text/css" />	
         <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
         <script type="text/javascript" language="javascript"
         src="js/jquery.dropdownPlain.js"></script>
@@ -14,10 +13,9 @@
     <body>
 
         <div id="page-wrap">
-            <src="${pageContext.request.contextPath}/resources/images/fruits_4.jpg"
-            The redox-active proteins for nanotechnological application
-            <spring:url value="/resources/images/fruits.jpg" htmlEscape="true" var="anyImage" />
-            <img src="${anyImage}" alt="inny obrazek" />
+            <img src="${pageContext.request.contextPath}/resources/images/fruits_4.gif" alt="inny obrazek" />
+            <h6>The redox-active proteins for nanotechnological application</h6>
+            <img src="${pageContext.request.contextPath}/resources/images/fruits.jpg" alt="inny obrazek" />
 
 <hr>
             <p>
