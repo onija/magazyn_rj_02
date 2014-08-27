@@ -10,8 +10,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import pl.altkom.magazyn.model.ComparatorByCena;
+import pl.altkom.magazyn.model.ComparatorByIlosc;
 import pl.altkom.magazyn.model.ComparatorByKat;
 import pl.altkom.magazyn.model.ComparatorByNazwa;
+import pl.altkom.magazyn.model.ComparatorByOpis;
 import pl.altkom.magazyn.model.Towar;
 
 @Repository
@@ -90,8 +92,12 @@ public class MagazynDaoDerby implements MagazynDao {
 
 		if (sort == 1)
 			Collections.sort(towary, new ComparatorByNazwa());
-		if (sort == 3)
+		if (sort == 2)
+			Collections.sort(towary, new ComparatorByOpis());
+                if (sort == 3)
 			Collections.sort(towary, new ComparatorByCena());
+                if (sort == 4)
+			Collections.sort(towary, new ComparatorByIlosc());
 		if (sort == 5)
 			Collections.sort(towary, new ComparatorByKat());
 

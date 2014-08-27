@@ -6,23 +6,6 @@
 </head>
 <body>
 
-	<form:form modelAttribute="towar">
-		Nazwa: <form:input path="nazwa" />
-		<br>
-		Opis: <form:input path="opis" />
-		<br>
-				Cena: <form:input path="cena" />
-		<br>
-				Ilosc: <form:input path="ilosc" />
-		<br>
-				Kategoria: <form:input path="kategoria" />
-		<br>
-		<input type="submit" value="Dodaj" formaction="magazyn"
-			formmethod="post" />
-
-
-
-	</form:form>
 
 	<form action="magazyn" method="get">
 		<input type="text" value=".*" name="wyrazenie" ><br> 
@@ -37,12 +20,12 @@
 
 	<table>
 		<tr>
-			<td><a href="magazyn?sort=0">Id</a></td>
-			<td><a href="magazyn?sort=1">Nazwa</a></td>
-			<td><a href="magazyn?sort=2">Opis</a></td>
-			<td><a href="magazyn?sort=3">Cena</a></td>
-			<td><a href="magazyn?sort=4">Ilosc</a></td>
-			<td><a href="magazyn?sort=5">Kategoria</a></td>
+			<td><a href="magazynstan?sort=0">Id</a></td>
+			<td><a href="magazynstan?sort=1">Nazwa</a></td>
+			<td><a href="magazynstan?sort=2">Opis</a></td>
+			<td><a href="magazynstan?sort=3">Cena</a></td>
+			<td><a href="magazynstan?sort=4">Ilosc</a></td>
+			<td><a href="magazynstan?sort=5">Kategoria</a></td>
 			<td>Usu&#324;</td>
 			<td>Zmie&#324;</td>
 		</tr>

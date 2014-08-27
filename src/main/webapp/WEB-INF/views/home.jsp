@@ -1,21 +1,23 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="./includes/common.jsp"%>
 <%@ page session="false" %>
 <html>
-<head>
-	<title>Home</title>
-</head>
-<body>
-<h1>
-	Hello world!  
-</h1>
+    <head>
+<!--        <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />-->
+        <title>Home</title>
+       
 
-<P>  The time on the server is ${serverTime}. </P>
+    </head>
+    <body>
 
-<ul>
-		<li>
-			<a href="<c:url value="/magazyn" />" >Magazyn</a>
-		</li>
-                
-</ul>
-</body>
+        <h1>
+            Hello world!  
+        </h1>
+
+        <P>  The time on the server is ${serverTime}. </P>
+
+        
+                <a href="<c:url value="/magazyn" />" >Magazyn</a>
+            <a href="<c:url value="/magazynstan" />" >Stan</a>
+    </body>
 </html>
