@@ -122,8 +122,7 @@ ul.dropdown li:hover>ul {
     color: #F6ECF0; 
     background:   #99CC33; 
 }
-
-.tabelka td {
+td {
     border: 1px dashed #B85A7C; 
     padding: .8em; 
     color: #F6ECF0; 
