@@ -48,7 +48,7 @@
                 <td><a href="magazyn?sort=4">Ilosc</a></td>
                 <td><a href="magazyn?sort=5">Kategoria</a></td>
                 <td>Usu&#324;</td>
-                <td>Zmie&#324;</td>
+                
             </tr>
             <c:forEach var="towar" items="${magazyn}">
                 <tr>
@@ -59,7 +59,7 @@
                     <td><c:out value="${towar.ilosc}" /></td>
                     <td><c:out value="${towar.kategoria}" /></td>
                     <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
-                    <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
+                  
                     </td>
                 </tr>
             </c:forEach>

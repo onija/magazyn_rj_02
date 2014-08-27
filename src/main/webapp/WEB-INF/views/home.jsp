@@ -19,6 +19,7 @@
 
             <a href="<c:url value="/magazyn" />" >Magazyn</a>
             <a href="<c:url value="/magazynstan" />" >Stan</a>
+            <a href="<c:url value="/magazynusun" />" >usun</a>
         </div>
     </body>
 </html>

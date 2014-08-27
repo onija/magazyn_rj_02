@@ -6,7 +6,8 @@
 
 body {
     font: 14px Helvetica, Sans-Serif;
-    background: #FFFFFF;
+     background-color: white;
+
 }
 
 img {
@@ -15,7 +16,7 @@ img {
 }
 .logo {
     width:15%;
-    align:bottom;
+    align:top;
 }
 
 h1 {
@@ -25,8 +26,11 @@ h6 {
     text-align:right;
 }
 #page-wrap {
-    width: 80%;
-    margin: 1% 10% 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+
 }
 
 a {

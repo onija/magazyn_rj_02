@@ -13,7 +13,7 @@
 
     <body>
 
-        <div>
+        <div><br>
             <img class="logo" src="${pageContext.request.contextPath}/resources/images/fruits_4.gif" alt="inny obrazek" />
             <h6> The redox-active proteins for nanotechnological application</h6>
             <img src="${pageContext.request.contextPath}/resources/images/fruits.jpg" alt="inny obrazek" />
