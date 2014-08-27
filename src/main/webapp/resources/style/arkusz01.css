@@ -124,6 +124,6 @@ ul.dropdown li:hover>ul {
 }
 td {
     border: 1px dashed #B85A7C; 
-    padding: .8em; 
-    color: #F6ECF0; 
+    padding: 2em; 
+    color: red; 
 }

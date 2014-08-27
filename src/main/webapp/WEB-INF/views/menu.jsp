@@ -14,14 +14,14 @@
     <body>
 
         <div id="page-wrap">
-            <spring:url value="/resources/images/po.jpg" htmlEscape="true" var="anyImage" />
+            <spring:url value="/resources/images/frutis.jpg" htmlEscape="true" var="anyImage" />
             <img src="${anyImage}" alt="inny obrazek" />
 
-
+<hr>
             <p>
                 <a target="_blank" href="http://www.wp.pl">Wirtualna Polska</a> | <a
                     target="_blank" href="http://www.onet.pl">Onet.pl</a> | <a
-                    target="_blank" href="http://www.interia.pl">Interia.pl</a>  | To jest nienaruszalne menu!!!
+                    target="_blank" href="http://www.interia.pl">Interia.pl</a>  |  Pracujesz xxxxxxxxxxx xxxxx xxxxx na tej stronie od godziny ${serverTime}. xxxxxxxxxx</P>
             </p>
 
             <ul class="dropdown">
