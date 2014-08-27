@@ -15,7 +15,7 @@ import pl.altkom.magazyn.dao.MagazynDao;
 import pl.altkom.magazyn.model.Towar;
 
 @Controller
-public class MagazynUsunController1 {
+public class MagazynController {
 
 	@Autowired
 	private MagazynDao md;
@@ -52,8 +52,33 @@ public class MagazynUsunController1 {
 		// md.addTowar(new Towar(0,"Buty","Letnie",200.0,30,"Obuwie"));
 		model.addAttribute("magazyn", md.getAllSortedTowar(atrybut, wyrazenie));
 		model.addAttribute(new Towar());
-		return "magazynusub";
+		return "magazyn";
 	}
 
+	@RequestMapping(value = "/magazynusun", method = RequestMethod.POST)
+	public String magazynDodaj(Locale locale, @ModelAttribute Towar towar,
+			Model model) {
+
+		md.addTowar(towar);
+		model.addAttribute("magazyn", md.getAllSortedTowar(0, ""));
+		model.addAttribute(new Towar());
+		return "magazyn";
+	}
+
+	@RequestMapping(value = "/magazynzmien", method = RequestMethod.GET)
+	public String magazynDodaj(HttpServletRequest request, Model model) {
+		int id = Integer.parseInt(request.getParameter("id"));
+		model.addAttribute(md.getTowar(id));
+		return "magazynzmien";
+	}
+
+	@RequestMapping(value = "/magazynzmien", method = RequestMethod.POST)
+	public String magazynDodaj(@ModelAttribute Towar towar, Model model) {
+		md.updateTowar(towar);
+		model.addAttribute(new Towar());
+		model.addAttribute("magazyn", md.getAllSortedTowar(0, ""));
+		model.addAttribute(new Towar());
+		return "magazyn";
+	}
 
 }
