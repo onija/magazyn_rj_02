@@ -14,7 +14,9 @@
     <body>
 
         <div id="page-wrap">
-            <spring:url value="/resources/images/frutis.jpg" htmlEscape="true" var="anyImage" />
+            <src="${pageContext.request.contextPath}/resources/images/fruits_4.jpg"
+            The redox-active proteins for nanotechnological application
+            <spring:url value="/resources/images/fruits.jpg" htmlEscape="true" var="anyImage" />
             <img src="${anyImage}" alt="inny obrazek" />
 
 <hr>
