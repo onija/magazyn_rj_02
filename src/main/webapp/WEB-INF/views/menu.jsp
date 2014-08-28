@@ -21,7 +21,7 @@
                 <p>
                     <a target="_blank" href="http://www.wp.pl">Wirtualna Polska</a> | <a
                         target="_blank" href="http://www.onet.pl">Onet.pl</a> | <a
-                        target="_blank" href="http://www.interia.pl">Interia.pl</a>  |  Pracujesz  na tej stronie od godziny ${serverTime}. </P>
+                        target="_blank" href="http://www.interia.pl">Interia.pl</a>
                 </p>
 
 
@@ -36,7 +36,7 @@
                         <a href="magazyn">Dodaj do Magazynu</a>
                     </li>
                     <li>
-                        <a href="magazynzmien" />">Zmie&#x144; na Magazynie</a>
+                        <a href="magazynzmien2">Zmie&#x144; na Magazynie</a>
                     </li>
                     <li>
                         <a href="magazynusun">Usu&#x144; z Magazynu</a>

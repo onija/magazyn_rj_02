@@ -24,13 +24,13 @@
 
             <table>
                 <tr>
-                    <td><a href="magazyn?sort=0">Id</a></td>
-                    <td><a href="magazyn?sort=1">Nazwa</a></td>
-                    <td><a href="magazyn?sort=2">Opis</a></td>
-                    <td><a href="magazyn?sort=3">Cena</a></td>
-                    <td><a href="magazyn?sort=4">Ilosc</a></td>
-                    <td><a href="magazyn?sort=5">Kategoria</a></td>
-                    <td>Usu&#324;</td>
+                    <td><a href="magazynzmien2?sort=0">Id</a></td>
+                    <td><a href="magazynzmien2?sort=1">Nazwa</a></td>
+                    <td><a href="magazynzmien2?sort=2">Opis</a></td>
+                    <td><a href="magazynzmien2?sort=3">Cena</a></td>
+                    <td><a href="magazynzmien2?sort=4">Ilosc</a></td>
+                    <td><a href="magazynzmien2?sort=5">Kategoria</a></td>
+                <td>Zmie&#324;</td>
                 </tr>
                 <c:forEach var="towar" items="${magazyn}">
                     <tr>
@@ -40,7 +40,7 @@
                         <td><c:out value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
                         <td><c:out value="${towar.kategoria}" /></td>
-                        <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
+                    <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
                  </tr>
                 </c:forEach>
             </table>
