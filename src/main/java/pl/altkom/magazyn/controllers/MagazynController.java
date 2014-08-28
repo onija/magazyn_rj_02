@@ -1,5 +1,7 @@
 package pl.altkom.magazyn.controllers;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +21,7 @@ public class MagazynController {
 
 	@Autowired
 	private MagazynDao md;
+    private Locale locale;
 
 	@RequestMapping(value = "/magazyn", method = RequestMethod.GET)
 	public String magazyn(Locale locale, Model model, HttpServletRequest request) {
@@ -54,7 +57,7 @@ public class MagazynController {
 		model.addAttribute(new Towar());
 		return "magazyn";
 	}
-
+	                
 	@RequestMapping(value = "/magazyn", method = RequestMethod.POST)
 	public String magazynDodaj(Locale locale, @ModelAttribute Towar towar,
 			Model model) {
