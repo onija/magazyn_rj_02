@@ -32,6 +32,9 @@ public class MagazynStanController {
 			atrybut = Integer.parseInt(request.getParameter("kategoria"));
 			wyrazenie = request.getParameter("wyrazenie");
 		}
+                if ((request.getParameter("sort") != null)) {
+			md.setSort(Integer.parseInt(request.getParameter("sort")));
+		}
 		
 
 		// md.addTowar(new Towar(0,"Buty","Letnie",200.0,30,"Obuwie"));

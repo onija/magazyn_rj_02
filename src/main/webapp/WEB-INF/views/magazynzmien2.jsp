@@ -10,7 +10,8 @@
     <body>
         <div id="page-wrap">
             <%@ include file="./menu.jsp"%><br><br>
-            <form action="magazynstan" method="get">
+
+            <form action="magazyn" method="get">
                 <input type="text" value=".*" name="wyrazenie" ><br> 
                 <select name="kategoria">
                     <option value="1" >Nazwa</option>
@@ -23,12 +24,13 @@
 
             <table>
                 <tr>
-                    <td><a href="magazynstan?sort=0">Id</a></td>
-                    <td><a href="magazynstan?sort=1">Nazwa</a></td>
-                    <td><a href="magazynstan?sort=2">Opis</a></td>
-                    <td><a href="magazynstan?sort=3">Cena</a></td>
-                    <td><a href="magazynstan?sort=4">Ilosc</a></td>
-                    <td><a href="magazynstan?sort=5">Kategoria</a></td>
+                    <td><a href="magazyn?sort=0">Id</a></td>
+                    <td><a href="magazyn?sort=1">Nazwa</a></td>
+                    <td><a href="magazyn?sort=2">Opis</a></td>
+                    <td><a href="magazyn?sort=3">Cena</a></td>
+                    <td><a href="magazyn?sort=4">Ilosc</a></td>
+                    <td><a href="magazyn?sort=5">Kategoria</a></td>
+                    <td>Usu&#324;</td>
                 </tr>
                 <c:forEach var="towar" items="${magazyn}">
                     <tr>
@@ -38,8 +40,10 @@
                         <td><c:out value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
                         <td><c:out value="${towar.kategoria}" /></td>
-                    </tr>
+                        <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
+                 </tr>
                 </c:forEach>
             </table>
+        </div>
     </body>
 </html>

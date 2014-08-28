@@ -36,7 +36,7 @@
                         <a href="magazyn">Dodaj do Magazynu</a>
                     </li>
                     <li>
-                        <a href="<c:url value="magazynzmien.jsp" />">Zmie&#x144; na Magazynie</a>
+                        <a href="magazynzmien" />">Zmie&#x144; na Magazynie</a>
                     </li>
                     <li>
                         <a href="magazynusun">Usu&#x144; z Magazynu</a>
