@@ -20,8 +20,8 @@ ul a:link, ul a:visited {
 	text-decoration: none;
 	display: block;
 	font-weight: bold;
-	background: #000 url(../images/tlo.gif);
-	color: #ccc;
+	background: #9ce url(../images/tlo.gif);
+	color: white;
 	padding: 10px 40px;
 	border-right: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -29,5 +29,5 @@ ul a:link, ul a:visited {
 
 ul a:hover {
 	background-color: orange;
-	background: red url(../images/tlo2.gif);
+	background: orange url(../images/tlo2.gif);
 }
