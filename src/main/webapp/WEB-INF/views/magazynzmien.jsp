@@ -4,7 +4,6 @@
 <!DOCTYPE>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />
         <title>Insert title here</title>
     </head>
@@ -25,5 +24,6 @@
                 <input type="submit" value="Zmie&#324;" />
                 <form:hidden path="id"/>
             </form:form>
+        </div>
     </body>
 </html>

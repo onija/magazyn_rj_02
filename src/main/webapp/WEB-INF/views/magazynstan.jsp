@@ -38,9 +38,6 @@
                         <td><c:out value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
                         <td><c:out value="${towar.kategoria}" /></td>
-                        <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
-                        <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
-                        </td>
                     </tr>
                 </c:forEach>
             </table>

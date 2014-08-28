@@ -10,7 +10,17 @@
     <body>
         <div id="page-wrap">
         <%@ include file="./menu.jsp"%><br><br>
-    
+   
+        <form action="magazynusun" method="get">
+            <input type="text" value=".*" name="wyrazenie" ><br> 
+            <select name="kategoria">
+                <option value="1" >Nazwa</option>
+                <option value="2" >Opis</option>
+                <option value="5" >Kategoria</option>
+            </select><br>
+            <input type="submit" name="filter" value="Filtruj" >
+
+        </form>
 
         <table>
             <tr>
@@ -31,7 +41,7 @@
                     <td><c:out value="${towar.cena}" /></td>
                     <td><c:out value="${towar.ilosc}" /></td>
                     <td><c:out value="${towar.kategoria}" /></td>
-                    <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
+                    <td><a href="magazynusun?id=${towar.id}&action=delete">Usu&#324;</a></td>
                   
                 </tr>
             </c:forEach>
