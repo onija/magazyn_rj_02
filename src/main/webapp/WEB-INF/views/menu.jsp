@@ -17,12 +17,12 @@
                 <img class="logo" src="${pageContext.request.contextPath}/resources/images/fruits_4.gif" alt="inny obrazek" />
                 <h6> The redox-active proteins for nanotechnological application</h6>
                 <img src="${pageContext.request.contextPath}/resources/images/fruits.jpg" alt="inny obrazek" />
-
+<!--
                 <p>
                     <a target="_blank" href="http://www.wp.pl">Wirtualna Polska</a> | <a
                         target="_blank" href="http://www.onet.pl">Onet.pl</a> | <a
                         target="_blank" href="http://www.interia.pl">Interia.pl</a>
-                </p>
+                </p>-->
 
 
                 <ul class="dropdown">
