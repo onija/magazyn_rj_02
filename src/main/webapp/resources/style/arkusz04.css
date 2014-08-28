@@ -1,3 +1,5 @@
+body{background-image: url(tlo2.gif)}
+
 ul, ul li {
 	display: block;
 	list-style: none;
@@ -20,7 +22,7 @@ ul a:link, ul a:visited {
 	text-decoration: none;
 	display: block;
 	font-weight: bold;
-	background: #000 "/resources/images/tlo2.gif" repeat-x center;
+	background: #000 url(tlo.gif) repeat-x center;
 	color: #fff;
 	padding: 10px 20px;
 	border-right: 1px solid #fff;
@@ -28,6 +30,6 @@ ul a:link, ul a:visited {
 }
 
 ul a:hover {
-	background-color: #800;
-	background-image: url(tlo.gif);
+/*	background-color: white;*/
+	background-image: url(tlo2.gif) repeat-x center;
 }

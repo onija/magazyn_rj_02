@@ -33,7 +33,6 @@
                     <td><c:out value="${towar.kategoria}" /></td>
                     <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
                   
-                    </td>
                 </tr>
             </c:forEach>
         </table>
