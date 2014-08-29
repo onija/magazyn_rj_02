@@ -14,11 +14,9 @@
     <body>
 
         <div><br>
-                <ul class="dropdown">
+                <ul>
                     <li>
-<!--                        <a href="<c:url value="/"/>">Home</a>-->
-                        
-                     <a href="home">Home</a>   
+                        <a href="<c:url value="/"/>">Home</a>   
                     </li>
                     <li>
                         <a href="magazynstan">Stan Magazynu</a>
