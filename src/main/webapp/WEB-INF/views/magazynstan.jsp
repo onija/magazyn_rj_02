@@ -9,6 +9,7 @@
     </head>
     <body>
         <div id="page-wrap">
+            <%@ include file="./menu_1.jsp"%>
             <%@ include file="./menu.jsp"%><br><br>
             <form action="magazynstan" method="get">
                 <input type="text" value=".*" name="wyrazenie" ><br> 

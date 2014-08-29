@@ -10,6 +10,7 @@
     </head>
     <body>
         <div id="page-wrap">
+            <%@ include file="./menu_1.jsp"%>
             <%@ include file="./menu.jsp"%><br><br>
             <form:form modelAttribute="towar">
                 <table>

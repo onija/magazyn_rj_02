@@ -16,6 +16,8 @@
     </head>
     <body>
         <div id="page-wrap">
+            <%@ include file="./menu_1.jsp"%>
+            <%@ include file="./menu_2.jsp"%>
             <%@ include file="./menu.jsp"%><br><br><br>
             <h1>
                 Hello world!  

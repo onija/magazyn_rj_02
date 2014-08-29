@@ -9,6 +9,7 @@
     </head>
     <body>
         <div id="page-wrap">
+            <%@ include file="./menu_1.jsp"%>
             <%@ include file="./menu.jsp"%><br><br>
 
             <form action="magazyn" method="get">
@@ -30,7 +31,7 @@
                     <td><a href="magazynzmien2?sort=3">Cena</a></td>
                     <td><a href="magazynzmien2?sort=4">Ilosc</a></td>
                     <td><a href="magazynzmien2?sort=5">Kategoria</a></td>
-                <td>Zmie&#324;</td>
+                    <td>Zmie&#324;</td>
                 </tr>
                 <c:forEach var="towar" items="${magazyn}">
                     <tr>
@@ -40,8 +41,8 @@
                         <td><c:out value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
                         <td><c:out value="${towar.kategoria}" /></td>
-                    <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
-                 </tr>
+                        <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a>
+                    </tr>
                 </c:forEach>
             </table>
         </div>
