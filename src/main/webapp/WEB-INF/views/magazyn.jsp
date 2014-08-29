@@ -21,6 +21,12 @@
                         <td>Ilo&#347;&#263;: <br><form:input path="ilosc" /></td>
                     </tr>
                     <tr>
+                    <td><form:errors path="nazwa" /></td>
+                    <td><form:errors path="opis" /></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                    <tr>
                         <td colspan="3">Zaznacz odpowiedni&#261; Kategori&#281;: &emsp;&emsp;   
                             <input type="radio" name="kategoria" value="odczynniki" /> &ensp;Odczynniki &emsp;&emsp;
                             <input type="radio" name="kategoria" value="zwiazki" /> &ensp;Zwi&#261;zki &emsp;&emsp;

@@ -16,7 +16,9 @@
         <div><br>
                 <ul class="dropdown">
                     <li>
-                        <a href="<c:url value="/"/>">Home</a>
+<!--                        <a href="<c:url value="/"/>">Home</a>-->
+                        
+                     <a href="home">Home</a>   
                     </li>
                     <li>
                         <a href="magazynstan">Stan Magazynu</a>
@@ -30,11 +32,7 @@
                     <li>
                         <a href="magazynusun">Usu&#x144; z Magazynu</a>
                     </li>
-                    <li>
-                        <a href="<c:url value="/"/>">Home</a>
-                    </li>				
                 </ul>
-
         </div>
 
     </body>

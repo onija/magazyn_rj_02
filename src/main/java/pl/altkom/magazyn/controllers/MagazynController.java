@@ -1,33 +1,31 @@
 package pl.altkom.magazyn.controllers;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import pl.altkom.magazyn.HomeController;
 
 import pl.altkom.magazyn.dao.MagazynDao;
 import pl.altkom.magazyn.model.Towar;
+import pl.altkom.util.validation.MagazynValidator;
 
 @Controller
 public class MagazynController {
 
+   
+
     @Autowired
     private MagazynDao md;
     private Locale locale;
-
-       
-    
 
     @RequestMapping(value = "/magazyn", method = RequestMethod.GET)
     public String magazyn(Locale locale, Model model, HttpServletRequest request) {
@@ -65,14 +63,17 @@ public class MagazynController {
     }
 
     @RequestMapping(value = "/magazyn", method = RequestMethod.POST)
-    public String magazynDodaj(Locale locale, @ModelAttribute Towar towar,
+    public String magazynDodaj(Locale locale, @Valid Towar towar, BindingResult bindingResult,
             Model model) {
-
+        if (bindingResult.hasErrors()) {
+            return "/magazyn";
+        }
         md.addTowar(towar);
         model.addAttribute("magazyn", md.getAllSortedTowar(0, ""));
         model.addAttribute(new Towar());
-        return "magazyn";
+        return "magazyn" ;
     }
+
 
     @RequestMapping(value = "/magazynzmien", method = RequestMethod.GET)
     public String magazynDodaj(HttpServletRequest request, Model model) {
@@ -91,3 +92,20 @@ public class MagazynController {
     }
 
 }
+       
+    
+
+//    @RequestMapping(value = "/zmiana", method = RequestMethod.POST)
+//    public String magazynDodaj(@Valid Towar towar, BindingResult bindingResult, Model model) {
+//        if (bindingResult.hasErrors()) {
+//            return "/zmiana";
+//        }
+//
+//        md.updateTowar(towar);
+//        model.addAttribute(new Towar());
+//        model.addAttribute("magazyn", md.getAllSortedTowar(0, ""));
+//        model.addAttribute(new Towar());
+//        return "magazyn";
+//    }
+
+

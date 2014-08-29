@@ -2,13 +2,19 @@ package pl.altkom.magazyn.model;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 public class Towar implements Serializable, Comparable {
 
     private long id;
+    @NotEmpty
     private String nazwa;
+    @NotEmpty
     private String opis;
+//    @Range
     private double cena;
+//    @Range (min=1 max=10000)
     private int ilosc;
     private String kategoria;
 
