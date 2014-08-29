@@ -13,24 +13,32 @@
 
     <body>
 
-        <div><br>
-                <ul>
-                    <li>
-                        <a href="<c:url value="/"/>">Home</a>   
-                    </li>
-                    <li>
-                        <a href="magazynstan">Stan Magazynu</a>
-                    </li>
-                    <li>
-                        <a href="magazyn">Dodaj do Magazynu</a>
-                    </li>
-                    <li>
-                        <a href="magazynzmien2">Zmie&#x144; na Magazynie</a>
-                    </li>
-                    <li>
-                        <a href="magazynusun">Usu&#x144; z Magazynu</a>
-                    </li>
-                </ul>
+        <div>
+            <br>
+                <table class="tabmenu">
+                    <tr>
+                        <td class="tabmenu">
+                            <ul>
+
+                                <li>
+                                    <a href="<c:url value="/"/>">Home</a>   
+                                </li>
+                                <li>
+                                    <a href="magazynstan">Stan Magazynu</a>
+                                </li>
+                                <li>
+                                    <a href="magazyn">Dodaj do Magazynu</a>
+                                </li>
+                                <li>
+                                    <a href="magazynzmien2">Zmie&#x144; na Magazynie</a>
+                                </li>
+                                <li>
+                                    <a href="magazynusun">Usu&#x144; z Magazynu</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
         </div>
 
     </body>

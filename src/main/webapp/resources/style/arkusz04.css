@@ -18,12 +18,37 @@ img {
     width:15%;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    border: 1px solid #38160C; 
+    /*    font: normal 11px verdana, arial, helvetica, sans-serif; */
+    color: yellow; 
+    background:   black; 
+}
+td {
+        border: 1px dashed #B85A7C; 
+    padding: 1%; 
+    color: white; 
+}
+
+table.tabmenu {
+    background: #9ce url(../images/tlo.gif);
+    padding: 0px; 
+            border: 1px solid #fff;
+
+}
+td.tabmenu {
+    padding: 0px; 
+    background: #9ce url(../images/tlo2.gif);
+
+
+}
 #page-wrap {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     background-color: white;
-
 }
 
 a {
@@ -49,7 +74,7 @@ ul {
     float: left;
     background-color: #fff;
     padding: 1px 0 1px 1px;
-    border: 1px solid #000;
+    border: 0px solid #000;
 }
 
 ul li {
@@ -63,7 +88,7 @@ ul a:link, ul a:visited {
     background: #9ce url(../images/tlo.gif);
     color: white;
     padding: 4px 10px;
-    border-right: 1px solid #fff;
+/*    border-left: 1px solid #fff;*/
     border-right: 1px solid #fff;
 }
 
