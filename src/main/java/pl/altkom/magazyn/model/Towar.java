@@ -8,14 +8,15 @@ import org.hibernate.validator.constraints.Range;
 public class Towar implements Serializable, Comparable {
 
     private long id;
-    @NotEmpty
+    @NotEmpty (message = "proszę wypełnić pole")
     private String nazwa;
-    @NotEmpty
+    @NotEmpty (message = "proszę wypełnić pole")
     private String opis;
 //    @Range
     private double cena;
 //    @Range (min=1 max=10000)
     private int ilosc;
+
     private String kategoria;
 
     public Towar(long id, String nazwa, String opis, double cena, int ilosc,

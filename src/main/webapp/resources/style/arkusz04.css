@@ -7,7 +7,10 @@ body {
     font: 14px Helvetica, Sans-Serif;
     font-size: 1em;
     background-color: white;
-
+    a:link { color: #EB7200; text-decoration: none; background-color: transparent }
+    a:visited { color: #EB7200; text-decoration: none; background-color: transparent }
+    a:hover { color: #EB7200; text-decoration: underline; background-color: transparent }
+    a:active { color: #EB7200; text-decoration: underline; background-color: transparent }
 }
 
 img {
@@ -24,10 +27,10 @@ table {
     border: 1px solid #38160C; 
     /*    font: normal 11px verdana, arial, helvetica, sans-serif; */
     color: yellow; 
-    background:   black; 
+    background: #4A4A4A; 
 }
 td {
-        border: 1px dashed #B85A7C; 
+    border: 1px solid white; 
     padding: 1%; 
     color: white; 
 }
@@ -35,19 +38,32 @@ td {
 table.tabmenu {
     background: #9ce url(../images/tlo.gif);
     padding: 0px; 
-            border: 1px solid #fff;
-
+    border: 1px solid #fff;
+    width: 100%;
 }
+
 td.tabmenu {
     padding: 0px; 
     background: #9ce url(../images/tlo2.gif);
-
-
 }
+
+table.filtr {
+    background: #9ce url(../images/tlo.gif);
+    padding: 0px; 
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+td.klik {
+    padding: 0px; 
+    background: #9ce url(../images/tlo2.gif);
+    text-align: right;
+}
+
 #page-wrap {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
     background-color: white;
 }
 
@@ -56,7 +72,13 @@ a {
 }
 
 h1 {
-    color: red;
+    color: #EB7200;
+    text-align:center;
+}
+h5 {
+    color:royalblue;
+    text-align:center;
+
 }
 h6 { 
     position: relative; bottom: 15px;
@@ -73,7 +95,7 @@ ul, ul li {
 ul {
     float: left;
     background-color: #fff;
-    padding: 1px 0 1px 1px;
+    padding: 0px 0 0px 1px;
     border: 0px solid #000;
 }
 
@@ -87,8 +109,8 @@ ul a:link, ul a:visited {
     font-weight: bold;
     background: #9ce url(../images/tlo.gif);
     color: white;
-    padding: 4px 10px;
-/*    border-left: 1px solid #fff;*/
+    padding: 10px 10px;
+    /*    border-left: 1px solid #fff;*/
     border-right: 1px solid #fff;
 }
 

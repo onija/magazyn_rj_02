@@ -11,46 +11,43 @@
     <body>
         <div id="page-wrap">
             <%@ include file="./menu_1.jsp"%>
-            <%@ include file="./menu.jsp"%><br><br>
+            <%@ include file="./menu.jsp"%><br>
+            <h1>Dodaj do magazynu</h1><br>
+            
             <form:form modelAttribute="towar">
                 <table>
                     <tr>
-                        <td>Nazwa: <br><form:input path="nazwa" /></td> 
-                        <td>Opis: <br><form:input path="opis" /></td>
-                        <td>Cena: <br><form:input path="cena" /></td>
+                        <td>Nazwa: <br><form:input path="nazwa" /><br><form:errors path="nazwa" /></td> 
+                        <td>Opis: <br><form:input path="opis" /><br><form:errors path="opis" /></td>
+                        <td>Cena: <br><form:input path="cena" /><br></td>
                         <td>Ilo&#347;&#263;: <br><form:input path="ilosc" /></td>
                     </tr>
-                    <tr>
-                    <td><form:errors path="nazwa" /></td>
-                    <td><form:errors path="opis" /></td>
-                    <td></td>
-                    <td></td>
-                    </tr>
+                   
                     <tr>
                         <td colspan="3">Zaznacz odpowiedni&#261; Kategori&#281;: &emsp;&emsp;   
-                            <input type="radio" name="kategoria" value="odczynniki" /> &ensp;Odczynniki &emsp;&emsp;
+                            <input type="radio" name="kategoria" value="odczynniki" checked="checked"/> &ensp;Odczynniki &emsp;&emsp;
                             <input type="radio" name="kategoria" value="zwiazki" /> &ensp;Zwi&#261;zki &emsp;&emsp;
-                            <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki 
+                            <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki
                         </td>
-                        <td>
-                            <input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" />
+                        <td class="klik">
+                            &ensp;<input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" />&ensp;
                         </td>
                     </tr>
                 </table>
             </form:form>
 
             <form action="magazyn" method="get">
-                <table>
+                <table class="filtr">
                     <tr>
                         <td>Szukany ci&#261;g liter &emsp;&emsp;
                             <input type="text" value=".*" name="wyrazenie" > &emsp;&emsp; 
                             Filtracja po: &emsp;
-                            <input type="radio" name="kategoria" value="1" /> &ensp;Nazwa &emsp;&emsp;
+                            <input type="radio" name="kategoria" value="1" checked="checked"/> &ensp;Nazwa &emsp;&emsp;
                             <input type="radio" name="kategoria" value="2" /> &ensp;Opis &emsp;&emsp;
                             <input type="radio" name="kategoria" value="3" /> &ensp;Kategoria
                         </td>
-                        <td>
-                            <input type="submit" name="filter" value=" Filtruj " >
+                        <td class="klik">
+                            &ensp;<input type="submit" name="filter" value=" Filtruj " >&ensp;
                         </td>
                     </tr>
                 </table>

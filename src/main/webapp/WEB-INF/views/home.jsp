@@ -20,14 +20,14 @@
             <%@ include file="./menu_2.jsp"%>
             <%@ include file="./menu.jsp"%><br><br><br>
             <h1>
-                Hello world!  
-            </h1>
-
-            <hr>
+                Witamy w magazynie GrzybLab 
+            </h1><br>
+            <h5>Pracuj, pracuj a garb sam Ci wyro&#347;nie</h5>
+                
+            <br><br><br>
+            <hr><br>
             Pracujesz  na tej stronie od - ${serverTime}. 
-            <a href="<c:url value="/magazyn" />" >Magazyn</a>
-            <a href="<c:url value="/magazynstan" />" >Stan</a>
-            <a href="<c:url value="/magazynusun" />" >usun</a>
+            <br><br>
         </div>
     </body>
 </html>

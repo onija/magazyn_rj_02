@@ -4,23 +4,30 @@
 <!DOCTYPE>
 <html>
     <head>
-        <link href="${pageContext.request.contextPath}/resources/style/arkusz01.css" rel="stylesheet" type="text/css" />
+        <link href="${pageContext.request.contextPath}/resources/style/arkusz04.css" rel="stylesheet" type="text/css" />
         <title>Insert title here</title>
     </head>
     <body>
         <div id="page-wrap">
             <%@ include file="./menu_1.jsp"%>
-            <%@ include file="./menu.jsp"%><br><br>
+            <%@ include file="./menu.jsp"%><br>
+            <h1>Zmie&#324; na magazynie</h1><br>
 
-            <form action="magazyn" method="get">
-                <input type="text" value=".*" name="wyrazenie" ><br> 
-                <select name="kategoria">
-                    <option value="1" >Nazwa</option>
-                    <option value="2" >Opis</option>
-                    <option value="5" >Kategoria</option>
-                </select><br>
-                <input type="submit" name="filter" value="Filtruj" >
-
+ <form action="magazyn" method="get">
+                <table>
+                    <tr>
+                        <td>Szukany ci&#261;g liter &emsp;&emsp;
+                            <input type="text" value=".*" name="wyrazenie" > &emsp;&emsp; 
+                            Filtracja po: &emsp;
+                            <input type="radio" name="kategoria" value="1" checked="checked"/> &ensp;Nazwa &emsp;&emsp;
+                            <input type="radio" name="kategoria" value="2" /> &ensp;Opis &emsp;&emsp;
+                            <input type="radio" name="kategoria" value="3" /> &ensp;Kategoria
+                        </td>
+                        <td>
+                            <input type="submit" name="filter" value=" Filtruj " >
+                        </td>
+                    </tr>
+                </table>
             </form>
 
             <table>
