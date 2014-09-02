@@ -17,14 +17,14 @@
  <form action="magazyn" method="get">
                 <table>
                     <tr>
-                        <td>Szukany ci&#261;g liter &emsp;&emsp;
+                        <td class="klak">Szukany ci&#261;g liter &emsp;&emsp;
                             <input type="text" value=".*" name="wyrazenie" > &emsp;&emsp; 
                             Filtracja po: &emsp;
                             <input type="radio" name="kategoria" value="1" checked="checked"/> &ensp;Nazwa &emsp;&emsp;
                             <input type="radio" name="kategoria" value="2" /> &ensp;Opis &emsp;&emsp;
                             <input type="radio" name="kategoria" value="3" /> &ensp;Kategoria
                         </td>
-                        <td>
+                        <td class="klik">
                             <input type="submit" name="filter" value=" Filtruj " >
                         </td>
                     </tr>
@@ -33,13 +33,13 @@
 
             <table>
                 <tr>
-                    <td><a href="magazynusun?sort=0">Id</a></td>
-                    <td><a href="magazynusun?sort=1">Nazwa</a></td>
-                    <td><a href="magazynusun?sort=2">Opis</a></td>
-                    <td><a href="magazynusun?sort=3">Cena</a></td>
-                    <td><a href="magazynusun?sort=4">Ilosc</a></td>
-                    <td><a href="magazynusun?sort=5">Kategoria</a></td>
-                    <td>Usu&#324;</td>
+                    <td class="naglowek"><a href="magazynusun?sort=0">Id</a></td>
+                    <td class="naglowek"><a href="magazynusun?sort=1">Nazwa</a></td>
+                    <td class="naglowek"><a href="magazynusun?sort=2">Opis</a></td>
+                    <td class="naglowek"><a href="magazynusun?sort=3">Cena</a></td>
+                    <td class="naglowek"><a href="magazynusun?sort=4">Ilo&#347;&#263;</a></td>
+                    <td class="naglowek"><a href="magazynusun?sort=5">Kategoria</a></td>
+                    <td class="naglowek">Usu&#324;</td>
 
                 </tr>
                 <c:forEach var="towar" items="${magazyn}">

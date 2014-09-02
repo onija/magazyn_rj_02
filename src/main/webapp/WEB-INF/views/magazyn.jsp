@@ -30,16 +30,16 @@
                             <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki
                         </td>
                         <td class="klik">
-                            &ensp;<input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" />&ensp;
+                            &ensp;<input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" />
                         </td>
                     </tr>
                 </table>
             </form:form>
 
             <form action="magazyn" method="get">
-                <table class="filtr">
+                <table>
                     <tr>
-                        <td>Szukany ci&#261;g liter &emsp;&emsp;
+                        <td class="klak">Szukany ci&#261;g liter &emsp;&emsp;
                             <input type="text" value=".*" name="wyrazenie" > &emsp;&emsp; 
                             Filtracja po: &emsp;
                             <input type="radio" name="kategoria" value="1" checked="checked"/> &ensp;Nazwa &emsp;&emsp;
@@ -47,7 +47,7 @@
                             <input type="radio" name="kategoria" value="3" /> &ensp;Kategoria
                         </td>
                         <td class="klik">
-                            &ensp;<input type="submit" name="filter" value=" Filtruj " >&ensp;
+                            &ensp;<input type="submit" name="filter" value=" Filtruj " >
                         </td>
                     </tr>
                 </table>
@@ -55,12 +55,12 @@
 
             <table>
                 <tr>
-                    <td><a href="magazyn?sort=0">Id</a></td>
-                    <td><a href="magazyn?sort=1">Nazwa</a></td>
-                    <td><a href="magazyn?sort=2">Opis</a></td>
-                    <td><a href="magazyn?sort=3">Cena</a></td>
-                    <td><a href="magazyn?sort=4">Ilo&#347;&#263;</a></td>
-                    <td><a href="magazyn?sort=5">Kategoria</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=0">Id</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=1">Nazwa</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=2">Opis</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=3">Cena</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=4">Ilo&#347;&#263;</a></td>
+                    <td class="naglowek"><a href="magazyn?sort=5">Kategoria</a></td>
                     <!--                <td>Usu&#324;</td>
                                         <td>Zmie&#324;</td>-->
                 </tr>

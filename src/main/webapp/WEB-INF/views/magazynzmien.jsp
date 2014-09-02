@@ -28,7 +28,7 @@
                             <input type="radio" name="kategoria" value="zwiazki" /> &ensp;Zwi&#261;zki &emsp;&emsp;
                             <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki
                         </td>
-                        <td>
+                        <td class="klik">
                     <input type="submit" value=" Zmie&#324; " />
                     
                     <form:hidden path="id"/></td> </tr> </table>

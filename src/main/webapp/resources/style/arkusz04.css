@@ -7,11 +7,13 @@ body {
     font: 14px Helvetica, Sans-Serif;
     font-size: 1em;
     background-color: white;
-    a:link { color: #EB7200; text-decoration: none; background-color: transparent }
-    a:visited { color: #EB7200; text-decoration: none; background-color: transparent }
-    a:hover { color: #EB7200; text-decoration: underline; background-color: transparent }
-    a:active { color: #EB7200; text-decoration: underline; background-color: transparent }
 }
+
+a:link { color: white; text-decoration: none; background-color: transparent }
+a:visited { color: white; text-decoration: none; background-color: transparent }
+a:hover { color: black; text-decoration: underline; background-color: transparent }
+a:active { color: white; text-decoration: none; background-color: transparent }
+
 
 img {
     width:100%;
@@ -36,7 +38,7 @@ td {
 }
 
 table.tabmenu {
-    background: #9ce url(../images/tlo.gif);
+    background: #9ce url(../images/tlo2.gif);
     padding: 0px; 
     border: 1px solid #fff;
     width: 100%;
@@ -56,8 +58,24 @@ table.filtr {
 
 td.klik {
     padding: 0px; 
-    background: #9ce url(../images/tlo2.gif);
+    background: #9ce url(../images/tlo.gif);
     text-align: right;
+    padding: 8px 10px;
+}
+
+td.klak {
+    padding: 0px; 
+    background: #9ce url(../images/tlo.gif);
+    text-align: left;
+    padding: 8px 10px;
+}
+
+td.naglowek {
+    padding: 0px; 
+    background: #9ce url(../images/tlo2.gif);
+    text-align: center;
+    padding: 8px 10px;
+
 }
 
 #page-wrap {
