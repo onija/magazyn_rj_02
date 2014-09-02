@@ -17,8 +17,8 @@
             <form:form modelAttribute="towar">
                 <table>
                     <tr>
-                        <td>Nazwa: <br><form:input path="nazwa" /><br><form:errors path="nazwa" /></td> 
-                        <td>Opis: <br><form:input path="opis" /><br><form:errors path="opis" /></td>
+                        <td>Nazwa: <br><form:input path="nazwa" /><br><h4><form:errors path="nazwa" /></h4></td> 
+                        <td>Opis: <br><form:input path="opis" /><br><h4><form:errors path="opis" /></h4></td>
                         <td>Cena: <br><form:input path="cena" /><br></td>
                         <td>Ilo&#347;&#263;: <br><form:input path="ilosc" /></td>
                     </tr>
@@ -30,7 +30,7 @@
                             <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki
                         </td>
                         <td class="klik">
-                            &ensp;<input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" />
+                            &ensp;<input type="submit" value=" Dodaj " formaction="magazyn" formmethod="post" /> &emsp;<input type="button"  onclick="location.href = 'magazyn'" value=" Anuluj " >
                         </td>
                     </tr>
                 </table>
@@ -69,9 +69,10 @@
                         <td><c:out value="${towar.id+1}" /></td>
                         <td><c:out value="${towar.nazwa}" /></td>
                         <td><c:out value="${towar.opis}" /></td>
-                        <td><c:out value="${towar.cena}" /></td>
+                        <td> <fmt:formatNumber type="number" pattern="###.00" value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
-                        <td><c:out value="${towar.kategoria}" /></td>
+                        <td><c:out value="${towar.kategoria}" />
+                                               </td>
 <!--                    <td><a href="magazyn?id=${towar.id}&action=delete">Usu&#324;</a></td>
                         <td><a href="magazynzmien?id=${towar.id}&action=update">Zmie&#324;</a></td>-->
                     </tr>

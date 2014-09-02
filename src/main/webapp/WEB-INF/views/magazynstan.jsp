@@ -44,7 +44,7 @@
                         <td><c:out value="${towar.id+1}" /></td>
                         <td><c:out value="${towar.nazwa}" /></td>
                         <td><c:out value="${towar.opis}" /></td>
-                        <td><c:out value="${towar.cena}" /></td>
+                        <td> <fmt:formatNumber type="number" pattern="###.00" value="${towar.cena}" /></td>
                         <td><c:out value="${towar.ilosc}" /></td>
                         <td><c:out value="${towar.kategoria}" /></td>
                     </tr>
