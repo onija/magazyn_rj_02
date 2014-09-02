@@ -29,7 +29,7 @@
                             <input type="radio" name="kategoria" value="pierwiastki" /> &ensp;Pierwiastki
                         </td>
                         <td class="klik">
-                    <input type="submit" value=" Zmie&#324; " />
+                    <input type="submit" value=" Zmie&#324; " /> <input type="button"  onclick="location.href = '/magazynzmien2'" value=" Anuluj " >
                     
                     <form:hidden path="id"/></td> </tr> </table>
                 </form:form>
