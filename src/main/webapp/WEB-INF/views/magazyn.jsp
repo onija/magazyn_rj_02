@@ -13,7 +13,7 @@
             <%@ include file="./menu_1.jsp"%>
             <%@ include file="./menu.jsp"%><br>
             <h1>Dodaj do magazynu</h1><br>
-            
+
             <form:form modelAttribute="towar">
                 <table>
                     <tr>
@@ -22,7 +22,7 @@
                         <td>Cena: <br><form:input path="cena" /><br></td>
                         <td>Ilo&#347;&#263;: <br><form:input path="ilosc" /></td>
                     </tr>
-                   
+
                     <tr>
                         <td colspan="3">Zaznacz odpowiedni&#261; Kategori&#281;: &emsp;&emsp;   
                             <input type="radio" name="kategoria" value="odczynniki" checked="checked"/> &ensp;Odczynniki &emsp;&emsp;

@@ -1,6 +1,7 @@
 package pl.altkom.magazyn.model;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
 import java.util.Comparator;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
@@ -57,6 +58,7 @@ public class Towar implements Serializable, Comparable {
     }
 
     public double getCena() {
+
         return cena;
     }
 
